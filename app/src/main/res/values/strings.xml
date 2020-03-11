@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Anime</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">AnimeFLV</string>
+    <string name="menu_gallery">Directorio Anime</string>
+    <string name="menu_slideshow">Siguiendo</string>
+    <string name="menu_tools">Ver luego</string>
+    <string name="menu_share">Terminos y condiciones</string>
+    <string name="menu_send">Acerca de</string>
+</resources>
