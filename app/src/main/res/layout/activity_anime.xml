@@ -9,22 +9,26 @@
 
 
     <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_width="346dp"
+        android:layout_height="670dp"
+        android:paddingBottom="20dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
         <androidx.constraintlayout.widget.ConstraintLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingBottom="22dp"
+            tools:layout_editor_absoluteY="1dp">
 
             <TextView
                 android:id="@+id/lbnombre"
                 android:layout_width="331dp"
                 android:layout_height="37dp"
                 android:layout_marginStart="135dp"
+                android:layout_marginTop="10dp"
                 android:layout_marginEnd="120dp"
                 android:gravity="center_vertical"
                 android:text="TextView"
@@ -37,26 +41,163 @@
 
             <ImageView
                 android:id="@+id/IVportada"
-                android:layout_width="197dp"
-                android:layout_height="264dp"
+                android:layout_width="175dp"
+                android:layout_height="232dp"
                 android:layout_marginStart="28dp"
                 android:layout_marginTop="28dp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/lbnombre"
-                app:srcCompat="@drawable/p" />
+                app:srcCompat="@drawable/ic_launcher_foreground" />
 
             <Button
                 android:id="@+id/btnemision"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="119dp"
+                android:layout_height="39dp"
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="28dp"
                 android:layout_marginEnd="40dp"
+                android:background="#009688"
                 android:text="En emision"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintHorizontal_bias="0.454"
                 app:layout_constraintStart_toEndOf="@+id/IVportada"
                 app:layout_constraintTop_toBottomOf="@+id/lbnombre" />
+
+            <ImageButton
+                android:id="@+id/btnfav"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="15dp"
+                android:backgroundTint="#FF5722"
+                android:scaleType="centerCrop"
+                android:tint="#FFFFFF"
+                app:layout_constraintEnd_toStartOf="@+id/textView10"
+                app:layout_constraintStart_toEndOf="@+id/IVportada"
+                app:layout_constraintTop_toBottomOf="@+id/btnemision"
+                app:srcCompat="@drawable/c" />
+
+            <ImageButton
+                android:id="@+id/imageButton2"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="15dp"
+                android:backgroundTint="#03A9F4"
+                android:scaleType="centerCrop"
+                android:tint="#FFFFFF"
+                app:layout_constraintEnd_toStartOf="@+id/textView12"
+                app:layout_constraintStart_toEndOf="@+id/IVportada"
+                app:layout_constraintTop_toBottomOf="@+id/imageButton3"
+                app:srcCompat="@drawable/che" />
+
+            <ImageButton
+                android:id="@+id/imageButton3"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="15dp"
+                android:backgroundTint="#FFEB3B"
+                android:scaleType="centerCrop"
+                android:tint="#FFFFFF"
+                app:layout_constraintEnd_toStartOf="@+id/textView11"
+                app:layout_constraintStart_toEndOf="@+id/IVportada"
+                app:layout_constraintTop_toBottomOf="@+id/btnfav"
+                app:srcCompat="@drawable/cinor" />
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="22dp"
+                android:text="Favoritos"
+                android:textColor="#E9FFFFFF"
+                app:layout_constraintStart_toEndOf="@+id/btnfav"
+                app:layout_constraintTop_toBottomOf="@+id/btnemision" />
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="65dp"
+                android:layout_height="39dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="35dp"
+                android:text="Ver mas tarde"
+                android:textAlignment="viewStart"
+                android:textAllCaps="false"
+                android:textColor="#E9FFFFFF"
+                app:layout_constraintStart_toEndOf="@+id/imageButton3"
+                app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="32dp"
+                android:text="Visto"
+                android:textColor="#E9FFFFFF"
+                app:layout_constraintStart_toEndOf="@+id/imageButton2"
+                app:layout_constraintTop_toBottomOf="@+id/textView11" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="318dp"
+                android:layout_height="288dp"
+                android:layout_marginStart="46dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginEnd="48dp"
+                app:cardBackgroundColor="@color/colorfondo"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cardView" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView"
+                android:layout_width="318dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="46dp"
+                android:layout_marginTop="31dp"
+                android:layout_marginEnd="48dp"
+                app:cardBackgroundColor="@color/colorfondo"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/IVportada">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:id="@+id/textView13"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Sinopsis:"
+                        android:textColor="#B5FFFFFF"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/lbsinopsis"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:text="TextView"
+                        android:textColor="#D0FFFFFF" />
+
+                    <View
+                        android:id="@+id/divider"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/colorPrimaryDark" />
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>
 

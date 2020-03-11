@@ -10,7 +10,7 @@ import com.example.anime.R;
 
 public class Anime extends AppCompatActivity {
 
-    private TextView lbnombre;
+    private TextView lbnombre, lbsinop;
     private ImageView img;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,9 +18,14 @@ public class Anime extends AppCompatActivity {
         setContentView(R.layout.activity_anime);
         lbnombre = findViewById(R.id.lbnombre);
         img = findViewById(R.id.IVportada);
+        lbsinop = findViewById(R.id.lbsinopsis);
+
         String nombre = getIntent().getStringExtra("nombre");
-        lbnombre.setText(nombre);
         String imgen = getIntent().getStringExtra("img");
+        String sinop = getIntent().getStringExtra("sinop");
+        lbnombre.setText(nombre);
+        lbsinop.setText(sinop);
+
 
         //imagen
         if(imgen.equals("p")) {
